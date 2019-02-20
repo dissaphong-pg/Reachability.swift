@@ -11,9 +11,9 @@
 		00C54B241C09CF68001C3F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C54B231C09CF68001C3F12 /* ViewController.swift */; };
 		00C54B261C09CF68001C3F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C54B251C09CF68001C3F12 /* Assets.xcassets */; };
 		00C54B291C09CF68001C3F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C54B271C09CF68001C3F12 /* Main.storyboard */; };
-		335AD58E2052EA92000D4D08 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AD5882052EA92000D4D08 /* Reachability.swift */; };
+		335AD58E2052EA92000D4D08 /* ReachabilitySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AD5882052EA92000D4D08 /* ReachabilitySwift.swift */; };
 		335AD58F2052EA92000D4D08 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 335AD5892052EA92000D4D08 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		335AD5A22052EB32000D4D08 /* ReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AD58C2052EA92000D4D08 /* ReachabilityTests.swift */; };
+		335AD5A22052EB32000D4D08 /* ReachabilitySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AD58C2052EA92000D4D08 /* ReachabilitySwiftTests.swift */; };
 		335AD5A52052EE07000D4D08 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7344721BE7678B008AFE69 /* Reachability.framework */; };
 		57A45A041C197BE800384AE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A45A031C197BE800384AE4 /* AppDelegate.swift */; };
 		57A45A061C197BE800384AE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A45A051C197BE800384AE4 /* ViewController.swift */; };
@@ -106,10 +106,10 @@
 		00C54B251C09CF68001C3F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C54B281C09CF68001C3F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00C54B2A1C09CF68001C3F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		335AD5882052EA92000D4D08 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		335AD5882052EA92000D4D08 /* ReachabilitySwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilitySwift.swift; sourceTree = "<group>"; };
 		335AD5892052EA92000D4D08 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		335AD58A2052EA92000D4D08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		335AD58C2052EA92000D4D08 /* ReachabilityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityTests.swift; sourceTree = "<group>"; };
+		335AD58C2052EA92000D4D08 /* ReachabilitySwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilitySwiftTests.swift; sourceTree = "<group>"; };
 		335AD58D2052EA92000D4D08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		335AD5972052EB22000D4D08 /* ReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A45A011C197BE800384AE4 /* ReachabilityAppleTVSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReachabilityAppleTVSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,7 +191,7 @@
 		335AD5872052EA92000D4D08 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				335AD5882052EA92000D4D08 /* Reachability.swift */,
+				335AD5882052EA92000D4D08 /* ReachabilitySwift.swift */,
 				335AD5892052EA92000D4D08 /* Reachability.h */,
 				335AD58A2052EA92000D4D08 /* Info.plist */,
 			);
@@ -201,7 +201,7 @@
 		335AD58B2052EA92000D4D08 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				335AD58C2052EA92000D4D08 /* ReachabilityTests.swift */,
+				335AD58C2052EA92000D4D08 /* ReachabilitySwiftTests.swift */,
 				335AD58D2052EA92000D4D08 /* Info.plist */,
 			);
 			path = Tests;
@@ -494,7 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335AD5A22052EB32000D4D08 /* ReachabilityTests.swift in Sources */,
+				335AD5A22052EB32000D4D08 /* ReachabilitySwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335AD58E2052EA92000D4D08 /* Reachability.swift in Sources */,
+				335AD58E2052EA92000D4D08 /* ReachabilitySwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

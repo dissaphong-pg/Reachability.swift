@@ -9,12 +9,12 @@
 import XCTest
 @testable import Reachability
 
-class ReachabilityTests: XCTestCase {
+class ReachabilitySwiftTests: XCTestCase {
     
     func testValidHost() {
         let validHostName = "google.com"
         
-        guard let reachability = Reachability(hostname: validHostName) else {
+        guard let reachability = ReachabilitySwift(hostname: validHostName) else {
             return XCTFail("Unable to create reachability")
         }
         
@@ -47,7 +47,7 @@ class ReachabilityTests: XCTestCase {
 
         let invalidHostName = "invalidhost"
 
-        guard let reachability = Reachability(hostname: invalidHostName) else {
+        guard let reachability = ReachabilitySwift(hostname: invalidHostName) else {
             return XCTFail("Unable to create reachability")
         }
         
